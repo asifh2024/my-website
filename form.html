@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html,body{
+           justify-items: center;
+        }
+        .Header {
+            margin-left: 19px;
+        }
+        .text {
+            color: #A94442;
+            font-family: Helvetica, arial, sans-serif;
+            font-weight: 600; 
+            font-size: 24px;
+            margin: 3px;
+            
+            text-decoration: underline;
+        }
+
+        .input {
+            padding: 6px 12px;
+            width: 226px;
+            height: 18px;
+            margin-bottom: 2px;
+            font-size: 14px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: 1px solid #939292 ;
+            box-shadow:2px 0px 7px rgba(207, 201, 201, 0.7) ;
+           }
+           input:focus,
+           input:valid {
+           box-shadow: 0 0 2px #04a4a4;
+           outline: none;
+            border-color: #04a4a4;
+           }
+
+        #submit {
+            background-color: #D9534F;
+            border: none;
+            color: #ffffff;
+            padding: 3px 3px;
+            width: 56px;
+            height: 30px;
+            border-radius: 4px;
+           margin-top: 0px;
+        }
+		
+		
+
+    </style>
+</head>
+<body>
+    <div>
+        <form action= "https://api.web3forms.com/submit" method="POST" >
+            <input type="hidden" name="access_key" value="06beb580-5c7e-4eaa-b083-6e7534924d33">
+            
+        
+            
+        
+
+            <p class="text">-:PLEASE FILL</p>
+            
+            <div>
+        
+                <input type="text" name="Name:" placeholder="Enter your name" class="input"   required autofocus><br>
+
+                <input type="email" name="Email:" placeholder="Enter your email" class="input"  required><br>
+                
+                <input type="tel" name="Mobile No.:" class="input" required placeholder="Enter mobile number" pattern="^\d{10}$"><br>
+                <input type="text" name="Message:" placeholder="Say something.........." class="input"  required><br>
+                <button type="submit" id="submit">Submit</button>
+
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
